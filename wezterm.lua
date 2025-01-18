@@ -4,11 +4,11 @@ local config = wezterm.config_builder()
 config.color_scheme = 'AdventureTime'
 
 -- Cwd
-config.default_cwd = "C:\\Program Files\\WezTerm-windows-20250103-121535-8e9cf912"
+--config.default_cwd = "C:\\Program Files\\WezTerm-windows-20250103-121535-8e9cf912"
 
 -- Background
 config.window_background_opacity = 1.0
-config.macos_window_background_blur = 10
+config.macos_window_background_blur = 20
 -- config.window_background_image = './background/bg.jpg'
 local dimmer = {
     -- Darken the background image by reducing it to 1/3rd
@@ -24,12 +24,13 @@ local dimmer = {
 config.background = { 
     {
         source = { 
-            File = './background/bg.jpg',
+            File = 'C:\\Program Files\\WezTerm-windows-20250103-121535-8e9cf912\\background\\bg.jpg',
         },
         height = 'Cover',
         hsb = dimmer
     }
 }
+
 
 -- Font
 config.font = wezterm.font('JetBrainsMono Nerd Font Mono', { weight = 'DemiBold', italic = false })
